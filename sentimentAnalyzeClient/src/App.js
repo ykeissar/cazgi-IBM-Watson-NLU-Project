@@ -12,8 +12,8 @@ class App extends React.Component {
   */
   state = {innercomp:<textarea rows="4" cols="50" id="textinput"/>,
             mode: "text",
-          sentimentOutput:[],
-          sentiment:true
+          sentimentOutput: [],
+          sentiment: true
         }
   
   /*
@@ -49,8 +49,8 @@ class App extends React.Component {
         let output = data.label;
         let color = "white"
         switch(output) {
-          case "positive": color = "black";break;
-          case "negative": color = "black";break;
+          case "positive": color = "green";break;
+          case "negative": color = "red";break;
           default: color = "black";
         }
         output = <div style={{color:color,fontSize:20}}>{output}</div>
